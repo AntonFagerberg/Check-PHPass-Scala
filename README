@@ -1,0 +1,15 @@
+Scala implementation of Portable PHP password hashing. (crypt_private password check only!)
+Written by Anton Fagerberg <anton at antonfagerberg dot com>, 2012.
+
+Based on the original code from Portable PHP password hashing framework
+written by Solar Designer <solar at openwall.com>.
+Original PHP implementation: http://www.openwall.com/phpass/
+
+Note that this code has not been peer-reviewed and any potential user should proceed with
+caution before implementing this in a production system. With that said, I have tested the code myself
+and used it in production.
+
+The cryptPrivate method is used in phpass when CRYPT_BLOWFISH and CRYPT_EXT_DES
+is not available in PHP. This piece of Scala code can verify those passwords.
+
+ No license, do what you want.
